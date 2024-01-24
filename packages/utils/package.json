@@ -1,0 +1,43 @@
+{
+  "name": "@simples/utils",
+  "description": "Utility functions and constants for Simples",
+  "version": "0.0.27",
+  "sideEffects": false,
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist/**"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "lint": "eslint src/",
+    "dev": "tsup --watch",
+    "check-types": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "next": "^14.0.4",
+    "react": "^18.2.0"
+  },
+  "devDependencies": {
+    "@simples/typescript-config": "workspace:*",
+    "@types/ms": "^0.7.34",
+    "@types/node": "18.11.9",
+    "@types/react": "^18.2.48",
+    "next": "^14.1.0",
+    "react": "^18.2.0",
+    "tsup": "^6.7.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "@sindresorhus/slugify": "^2.2.1",
+    "clsx": "^1.2.1",
+    "ms": "^2.1.3",
+    "nanoid": "^5.0.4",
+    "react-string-replace": "^1.1.1",
+    "tailwind-merge": "^1.14.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
